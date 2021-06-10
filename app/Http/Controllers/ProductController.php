@@ -5,10 +5,12 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Product;
+use App\Models\Produit;
 use App\Models\Cart;
 use App\Models\Order;
 use Illuminate\Support\Facades\DB;
 use Session;
+
 
 class ProductController extends Controller
 {
@@ -97,6 +99,27 @@ function removeCart($id)
      ->get();
 
      return view('myorders',['orders'=>$orders]);
+
+   }
+   function removeProduct($id){
+    
+    Produit::destroy($id);
+    $data= Produit::all();
+    return view('/dashboard.index',['products'=>$data]);
+   }
+   function insert($id){
+    $data= Produit::find($id); 
+    $product= new Product;
+    $product->id=$id;
+    $product->name=$data->name;
+    $product->price=$data->price;
+    $product->description=$data->description;
+    $product->category=$data->category;
+    $product->gallery=$data->gallery;
+    $product->save();
+    $data= Produit::all();
+    return view('/dashboard.index',['products'=>$data]);
+    
 
    }
     

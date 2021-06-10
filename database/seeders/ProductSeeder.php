@@ -16,17 +16,11 @@ class ProductSeeder extends Seeder
     {
     DB::table('products')->insert(
   [
-        'name'=>'Oppo mobile',
-        "price"=>"300","description"=>"A smartphone with 8gb ram and much more feature",
+        'name'=>'Samsung A12 ',
+        "price"=>"20000",
+        'description'=>"A smartphone with 16gb ram and much more feature",
         "category"=>"mobile",
-        "gallery"=>"https://c1.lestechnophiles.com/images.frandroid.com/wp-content/uploads/2020/09/oppo-reno-4-z-frandroid-2020.png?resize=580,580"
-    
-    ],[
-        'name'=>'LED télé',
-        "price"=>"700","description"=>"A smart tv with much more feature",
-        "category"=>"télé",
-        "gallery"=>"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX8IYefkzLJzmDn7rtu1dkkVjNN2LXr1XEYw&usqp=CAU"
-    
+        "gallery"=>"https://www.samsungtunisie.tn/4395-large_default/samsung-galaxy-a12-prix-tunisie.jpg"
     
     
     ]) ;
