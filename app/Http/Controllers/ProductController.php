@@ -104,6 +104,8 @@ function removeCart($id)
    function removeProduct($id){
     
     Produit::destroy($id);
+     Product::destroy($id);
+
     $data= Produit::all();
     return view('/dashboard.index',['products'=>$data]);
    }
@@ -142,5 +144,11 @@ function removeCart($id)
 $data=Produit::all();
 return view('/dashboard.index',['products'=>$data]);
    }
-    
+   function search(Request $req)
+   {
+       $data= Product::
+       where('name', 'like', '%'.$req->input('query').'%')
+       ->get();
+       return view('search',['products'=>$data]);
+   }
 }

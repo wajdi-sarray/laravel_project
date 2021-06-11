@@ -44,6 +44,7 @@ Route::get("remove/{id}",'App\Http\Controllers\ProductController@removeProduct')
 Route::get("insert/{id}",'App\Http\Controllers\ProductController@insert');
 Route::get("update/{id}",'App\Http\Controllers\ProductController@update');
 Route::post("/valide/{id}",'App\Http\Controllers\ProductController@valide');
+Route::get("search",'App\Http\Controllers\ProductController@search');
 
 
 

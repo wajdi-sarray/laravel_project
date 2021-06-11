@@ -26,7 +26,8 @@ if(Session::has('user'))
           <li class="active"><a href="#">Home</a></li>
           <li><a href="/myorders">Orders</a></li>
         </ul>
-        <form action="/search" class="navbar-form navbar-left">
+        <form action="search" class="navbar-form navbar-left">
+        @csrf
           <div class="form-group">
             <input type="text" name="query" class="form-control search-box" placeholder="Search">
           </div>
