@@ -16,11 +16,11 @@ class ProduitSeeder extends Seeder
     {
         DB::table('produits')->insert(
             [
-                  'name'=>'Samsung A50 ',
-                  "price"=>"19000",
-                  'description'=>"A smartphone with 16gb ram and much more feature",
-                  "category"=>"mobile",
-                  "gallery"=>"https://c2.lestechnophiles.com/images.frandroid.com/wp-content/uploads/2019/04/samsung-galaxy-a50-2019-frandroid-france-packshot-png.png?resize=580,580"
+                  "name"=>'Sony Tv',
+                  "price"=>"105000",
+                  "description"=>"A télé  much more feature",
+                  "category"=>"télé",
+                  "gallery"=>"https://www.sony.com/image/4dfd9ca48ba82b26b620b9049c099665?fmt=pjpeg&wid=660&hei=660&bgcolor=F1F5F9&bgc=F1F5F9"
               
               
               ]) ;

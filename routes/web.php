@@ -56,3 +56,6 @@ Route::get("search",'App\Http\Controllers\ProductController@search');
 
 
 
+
+
+

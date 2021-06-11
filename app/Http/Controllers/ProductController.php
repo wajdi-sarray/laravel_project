@@ -151,4 +151,14 @@ return view('/dashboard.index',['products'=>$data]);
        ->get();
        return view('search',['products'=>$data]);
    }
+   
+   static function total(){
+       return Produit::all()->count();
+   }
+   static function somme(){
+    $total= $products= DB::table('orders')
+    ->join('products','orders.product_id','=','products.id')
+->sum('products.price');
+    return $total;
+   }
 }
