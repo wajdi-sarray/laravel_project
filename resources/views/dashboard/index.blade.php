@@ -132,6 +132,7 @@
                                     <td>{{$item['price']}}</td>
                                     <td> <a href="/remove/{{$item->id}}" class="btn btn-danger" >  Delete   </td>
                                     <td> <a href="/insert/{{$item->id}}" class="btn btn-warning" >  Insert   </td>
+                                    <td> <a href="/update/{{$item->id}}" class="btn btn-info" >  Update   </td>
                                    
                                     
                                 </tr>

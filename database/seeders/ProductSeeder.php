@@ -16,11 +16,7 @@ class ProductSeeder extends Seeder
     {
     DB::table('products')->insert(
   [
-        'name'=>'Samsung A12 ',
-        "price"=>"20000",
-        'description'=>"A smartphone with 16gb ram and much more feature",
-        "category"=>"mobile",
-        "gallery"=>"https://www.samsungtunisie.tn/4395-large_default/samsung-galaxy-a12-prix-tunisie.jpg"
+        
     
     
     ]) ;

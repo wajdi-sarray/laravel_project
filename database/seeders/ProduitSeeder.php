@@ -16,11 +16,11 @@ class ProduitSeeder extends Seeder
     {
         DB::table('produits')->insert(
             [
-                  'name'=>'Samsung A12 ',
-                  "price"=>"20000",
+                  'name'=>'Samsung A70 ',
+                  "price"=>"10000",
                   'description'=>"A smartphone with 16gb ram and much more feature",
                   "category"=>"mobile",
-                  "gallery"=>"https://www.samsungtunisie.tn/4395-large_default/samsung-galaxy-a12-prix-tunisie.jpg"
+                  "gallery"=>"https://www.tunisianet.com.tn/128071-large/telephone-portable-samsung-galaxy-a70-blanc-sim-orange-offerte-60-go.jpg"
               
               
               ]) ;

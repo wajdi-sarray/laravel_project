@@ -122,5 +122,25 @@ function removeCart($id)
     
 
    }
+   function update($id){
+    $data =Produit::find($id);
+       return view('/update',['products'=>$data]);
+   }
+   function valide($id,Request $req){
+    $produit= Produit::find($id) ;
+    $produit->name=$req->name;
+    $produit->price=$req->price;
+    $produit->description=$req->description;
+    $produit->category=$req->category;
+    $produit->save();
+    $product=Product::find($id);
+    $product->name=$produit->name;
+    $product->price=$produit->price;
+    $product->description=$produit->description;
+    $product->category=$produit->category;
+    $product->save();
+$data=Produit::all();
+return view('/dashboard.index',['products'=>$data]);
+   }
     
 }
