@@ -16,11 +16,11 @@ class ProduitSeeder extends Seeder
     {
         DB::table('produits')->insert(
             [
-                  "name"=>'Sony Tv',
+                  "name"=>'Samsung S21',
                   "price"=>"105000",
-                  "description"=>"A télé  much more feature",
-                  "category"=>"télé",
-                  "gallery"=>"https://www.sony.com/image/4dfd9ca48ba82b26b620b9049c099665?fmt=pjpeg&wid=660&hei=660&bgcolor=F1F5F9&bgc=F1F5F9"
+                  "description"=>"A mobile with 16g ram and   much more feature",
+                  "category"=>"mobile",
+                  "gallery"=>"https://images.samsung.com/africa_fr/smartphones/galaxy-s21/buy/galaxy-s21-phantom-violet.png"
               
               
               ]) ;
